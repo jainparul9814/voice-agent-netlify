@@ -99,7 +99,7 @@ export function App() {
   }, []);
 
   const errorMessage = !RELAY_SERVER_URL
-    ? 'Missing required "wss" parameter in URL'
+    ? 'Please add ?wss=YOUR_WEBSOCKET_URL to enable voice features'
     : (() => {
         try {
           new URL(RELAY_SERVER_URL);
